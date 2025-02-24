@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="8dp"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/test_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/l1"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/test_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CBC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@id/test_image"
+        app:layout_constraintStart_toEndOf="@id/test_image" />
+
+    <!-- Test Description -->
+    <TextView
+        android:id="@+id/test_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="A Comprehensive Analysis"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="@id/test_name"
+        app:layout_constraintTop_toBottomOf="@id/test_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/test_includes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Includes 1 Test"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="@id/test_name"
+        app:layout_constraintTop_toBottomOf="@id/test_description" />
+
+
+
+
+    <TextView
+        android:id="@+id/report_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report in 12 hours"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="@id/test_name"
+        app:layout_constraintTop_toBottomOf="@id/test_includes"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/test_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="৳400"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/report_time"
+        app:layout_constraintStart_toStartOf="@id/test_name"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/book_test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Book Test"
+        android:textColor="#FFFFFF"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/purple_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
