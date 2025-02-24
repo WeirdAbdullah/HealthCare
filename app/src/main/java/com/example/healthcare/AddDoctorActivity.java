@@ -122,3 +122,4 @@ public class AddDoctorActivity extends AppCompatActivity {
         binding.img.setSelection(0);
     }
 }
+/////
